@@ -1,4 +1,4 @@
-from random import eleccion, 
+from random import choice, sample
 
 
 cartas = { 
