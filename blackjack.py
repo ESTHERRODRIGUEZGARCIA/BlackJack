@@ -1,4 +1,4 @@
-from random import choice, sample
+from random import random
 
 
 cartas = { 
@@ -16,3 +16,4 @@ cartas = {
     chr(0x1f0ad): 10, 
     chr(0x1f0ae): 10, 
 } 
+print("Cartas: {}".format(" ".join(cartas.keys()))) # hay que rellenarlo con la key, definido por python. El .format, todo lo que hay dentro del paréntesis, lo pone entre las llaves
