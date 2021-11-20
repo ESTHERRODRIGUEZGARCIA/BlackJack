@@ -62,3 +62,10 @@ print(carta, end=" ")
 
 print(" >>> su puntuación es de", score)
 
+#sample sirve para barajar
+main_banca = sample(lista_cartas, 2)
+score_banca = sum(cartas[carta] for carta in main_banca)
+print("La banca tiene: {} {}  >> su score es {}".format(main_banca[0],
+                                                          main_banca[1],
+                                                          score_banca))
+                                                          
