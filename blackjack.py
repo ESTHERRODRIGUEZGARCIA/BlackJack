@@ -1,15 +1,18 @@
-cartas = {
-    chr(0*11): 11,
-    chr(0*12): 2,
-    chr(0*13): 3,
-    chr(0*14): 4,
-    chr(0*15): 5,
-    chr(0*16): 6,
-    chr(0*17): 7,
-    chr(0*18): 8,
-    chr(0*19): 9,
-    chr(0*20): 10,
-    chr(0*21): 10,
-    chr(0*22): 10,
-    chr(0*23): 10,
-}
+from random import eleccion, 
+
+
+cartas = { 
+    chr(0x1f0a1): 11, 
+    chr(0x1f0a2): 2, 
+    chr(0x1f0a3): 3, 
+    chr(0x1f0a4): 4, 
+    chr(0x1f0a5): 5, 
+    chr(0x1f0a6): 6, 
+    chr(0x1f0a7): 7, 
+    chr(0x1f0a8): 8, 
+    chr(0x1f0a9): 9, 
+    chr(0x1f0aa): 10, 
+    chr(0x1f0ab): 10, 
+    chr(0x1f0ad): 10, 
+    chr(0x1f0ae): 10, 
+} 
