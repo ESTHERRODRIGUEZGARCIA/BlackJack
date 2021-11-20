@@ -16,3 +16,5 @@ cartas = {
     chr(0x1f0ad): 10, 
     chr(0x1f0ae): 10, 
 }
+print("Cartas: {}".format(" ".join(cartas.keys())))
+print("Puntos: {}".format(list(cartas.values())))
