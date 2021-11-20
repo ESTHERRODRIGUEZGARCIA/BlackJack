@@ -1,5 +1,6 @@
 from random import choice, sample
 
+#valor de la carta,  lista de cartas para poder escoger una carta.
 
 cartas = { 
     chr(0x1f0a1): 11, 
@@ -23,5 +24,6 @@ print("Iteración ordenada del diccionario: ")
 for carta, valor in cartas.items():
     print("La carta {} vale {}".format(carta, valor))
 
-print("Ahora juguemos al BlackJack: ")
+print("Ahora juguemos al BlackJack: \nPodrás escoger dos cartas, una a continuación de la otra. \nSus valores serán sumados")
 lista = list(cartas)
+#ahora, en qué consiste el juego
