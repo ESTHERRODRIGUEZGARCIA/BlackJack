@@ -18,3 +18,10 @@ cartas = {
 }
 print("Cartas: {}".format(" ".join(cartas.keys())))
 print("Puntos: {}".format(list(cartas.values())))
+
+print("Iteración ordenada del diccionario: ")
+for carta, valor in cartas.items():
+    print("La carta {} vale {}".format(carta, valor))
+
+print("Ahora juguemos al BlackJack: ")
+lista = list(cartas)
