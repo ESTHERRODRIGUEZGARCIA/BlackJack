@@ -45,4 +45,4 @@ score += cartas[carta]
 print(carta, end=" ")
 print("\n >>> su puntuación es de", score)
 #juego hecho
-#
+
