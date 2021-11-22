@@ -24,7 +24,7 @@ print("Iteración ordenada del diccionario: ")
 for carta, valor in cartas.items():
     print("La carta {} vale {}".format(carta, valor))
 
-print("Recordemos las normas: ")
+print("\n\nRecordemos las normas: ")
 print("Al inicio de cada partida el jugador debe apostar.")
 print("El crupier repartirá dos cartas descubiertas a cada jugador y una a sí mismo, también visible a los jugadores.")
 print("Cada jugador decidirá si pide más cartas o se planta con las dos ya repartidas.")
@@ -37,3 +37,11 @@ print("\nAhora, juguemos:")
 lista = list(cartas)
 print("Ha seleccionado:", end=" ")
 carta = choice(lista)
+score = cartas[carta]
+print(carta, end=" ")
+#aquí el programa nos enseña la carta que ha seleccionado
+carta = choice(lista)
+score += cartas[carta]
+print(carta, end=" ")
+print("\n >>> su puntuación es de", score)
+#juego hecho
