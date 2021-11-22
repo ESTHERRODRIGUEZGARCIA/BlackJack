@@ -24,7 +24,7 @@ print("Iteración ordenada del diccionario: ")
 for carta, valor in cartas.items():
     print("La carta {} vale {}".format(carta, valor))
 
-print("Ahora juguemos al BlackJack: ")
+print("Recordemos las normas: ")
 print("Al inicio de cada partida el jugador debe apostar.")
 print("El crupier repartirá dos cartas descubiertas a cada jugador y una a sí mismo, también visible a los jugadores.")
 print("Cada jugador decidirá si pide más cartas o se planta con las dos ya repartidas.")
@@ -32,7 +32,8 @@ print("Luego el crupier jugará su mano.")
 print("Los jugadores que se queden más lejos de 21 que el crupier o que hayan sobrepasado este valor, pierden.")
 print("Quienes tengan el mismo valor del crupier recuperan su apuesta pero no pierden ni ganan.")
 print("Los jugadores que saquen BlackJack (as más 10 o figura) se les paga 3×2 y aquellos que superen al crupier se les paga 1×1 según la apuesta que hayan hecho.")
-print("")
+print("\nAhora, juguemos:")
 
 lista = list(cartas)
-#ahora, en qué consiste el juego
+print("Ha seleccionado:", end=" ")
+carta = choice(lista)
