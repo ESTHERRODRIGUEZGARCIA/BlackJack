@@ -34,28 +34,25 @@ print("Quienes tengan el mismo valor del crupier recuperan su apuesta pero no pi
 print("Los jugadores que saquen BlackJack (as más 10 o figura) se les paga 3×2 y aquellos que superen al crupier se les paga 1×1 según la apuesta que hayan hecho.")
 print("\nAhora, juguemos:")
 
-partidas = int(input("¿Cuántas partidas queres jugar? :"))
-primera = 0
-while partidas != primera:
-    lista = list(cartas)
-    print("Ha seleccionado:", end=" ")
-    carta = choice(lista)
-    score = cartas[carta]
-    print(carta, end=" ")
-    #aquí el programa nos enseña la carta que ha seleccionado
-    carta = choice(lista)
-    score += cartas[carta]
-    print(carta, end=" ")
-    print("\n >>> su puntuación es de", score)
 
+lista = list(cartas)
+print("Ha seleccionado:", end=" ")
+carta = choice(lista)
+score = cartas[carta]
+print(carta, end=" ")
+#aquí el programa nos enseña la carta que ha seleccionado
+carta = choice(lista)
+score += cartas[carta]
+print(carta, end=" ")
+print("\n >>> su puntuación es de", score)
 
-    main_banca = sample(lista, 2)
-    score_banca = sum(cartas[carta] for carta in main_banca)
-    print("La banca tiene: {} {}  \n>>> su puntuación es {}".format(main_banca[0], main_banca[1], score_banca))
+main_banca = sample(lista, 2)
+score_banca = sum(cartas[carta] for carta in main_banca)
+print("La banca tiene: {} {}  \n>>> su puntuación es {}".format(main_banca[0], main_banca[1], score_banca))
+if score_banca < score:
+    print("Ha ganado el jugador. ")
+if score_banca > score:
+    print("Ha ganado la banca. ")
+if score_banca == score:
+    print("Empate. ")
 
-    if score_banca < score:
-        print("Ha ganado el jugador. ")
-    if score_banca > score:
-        print("ha ganado la banca: ")
-    if score_banca == score:
-        print("Empate. ")
