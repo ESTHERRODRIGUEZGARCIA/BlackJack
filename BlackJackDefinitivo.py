@@ -27,7 +27,6 @@ for carta, valor in cartas.items():
 print("\n\nRecordemos las normas: ")
 print("Al inicio de cada partida el jugador debe apostar.")
 print("El crupier repartirá dos cartas descubiertas a cada jugador y una a sí mismo, también visible a los jugadores.")
-print("Cada jugador decidirá si pide más cartas o se planta con las dos ya repartidas.")
 print("Luego el crupier jugará su mano.")
 print("Los jugadores que se queden más lejos de 21 que el crupier o que hayan sobrepasado este valor, pierden.")
 print("Quienes tengan el mismo valor del crupier recuperan su apuesta pero no pierden ni ganan.")
